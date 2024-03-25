@@ -9,3 +9,7 @@ h1{
 img{
     height: 300px;
 }
+#fav{
+    padding:20px;
+    background-color:blue;
+}
