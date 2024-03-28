@@ -2,14 +2,79 @@ body{
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
-h1{
+#title-container{
+    max-width: 150vw;
+    max-height: 100vh;
+}
+#title{
+    font-size: 30px;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+#title-container {
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 5%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    background-color: rgb(220, 220, 220);
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 10px;
+    display: block;
     color: rgb(0, 0, 0);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 0px;
-    padding:10px;
-    background-color: white;
-    box-shadow:0px 0px 4px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #7b7b7b;
+  }
+
+.profile-container{
+    margin-top: 0%;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+   background-color: rgb(1, 122, 228);
+}
+
+#prof-img{
+    margin-top: 10px;
+    border-radius: 20px;
+    width: 25vw;
+    height: 60vh;
+}
+#profile-info{
+    font-family:monospace;
+    margin: 0;
+    font-size: 15px;
+    margin-left: 2%;
+    #name{
+        font-size: 50px;
+    }
+    #name-{
+        font-size: 20px;
+    }
+    
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
 }
 #subject{
     margin-top: 0px;
@@ -25,6 +90,7 @@ h1{
     background-color: rgb(220, 220, 220);
     height: 30vh;
     margin: 10px;
+    margin-top: 100%;
     width: 20vw;
     box-shadow: 0px 0px 1px;
     border-radius: 10px;
@@ -43,7 +109,7 @@ h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media only screen and (max-width: 600px) {
-    .web2,.personal {
+    .web2,.personal,.title,#title-container,.profile-container {
         width: 80%;
     }
 
