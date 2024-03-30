@@ -79,7 +79,7 @@ body{
         width: 80%;
     }
 
-    .form-group, .login-btn{
+    .form-group, .form-group input,.form-group label, .login-btn{
         width: 100%;
     }
 }
