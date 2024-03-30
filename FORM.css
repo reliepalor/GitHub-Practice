@@ -74,4 +74,12 @@ body{
 
 .login-btn:hover{
     background-color: #2003dc;
+}@media only screen and (max-width: 600px) {
+    .login-container {
+        width: 80%;
+    }
+
+    .form-group, .login-btn{
+        width: 100%;
+    }
 }
