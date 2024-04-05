@@ -72,7 +72,7 @@ body{
     
 }
 @media only screen and(max-width:600px){
-    #title-container,.profile-container,.profile,.profile-info{
+    #title-container,.profile-container,.profile,#profile-info{
         width: 80%;
     }
     #title,#menu,#profile-img,#name,#name-{
