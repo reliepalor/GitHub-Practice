@@ -7,6 +7,7 @@ body{
 #title-container{
     max-width: 150vw;
     max-height: 100vh;
+    
 }
 #title{
     font-size: 30px;
@@ -70,7 +71,14 @@ body{
     }
     
 }
-
+@media only screen and(max-width:600px){
+    #title-container,.profile-container,.profile,.profile-info{
+        width: 80%;
+    }
+    #title,#menu,#profile-img,#name,#name-{
+        width: 100%;
+    }
+}
 
 .container{
     display: flex;
@@ -109,7 +117,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 @media only screen and (max-width: 600px) {
-    .web2,.personal,.title,#title-container,.profile-container {
+    .container.web2,.personal,.subject{
         width: 80%;
     }
 
@@ -123,11 +131,5 @@ body{
     background-color: #689cfc;
 }
 #table:hover{
-    background-color: #689cfc;
-}
-#login:hover{
-    background-color: #689cfc;
-}
-#notes:hover{
     background-color: #689cfc;
 }
