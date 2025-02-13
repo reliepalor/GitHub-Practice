@@ -287,13 +287,14 @@
         <button id="open">Open Envelope</button>
         <button id="reset">Close Envelope</button>
     </div>
-
+    <audio id="valentineAudio" src="noerase.m4a" preload="auto"></audio>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             const envelope = $('#envelope');
             const btnOpen = $("#open");
             const btnReset = $("#reset");
+            const audio = document.getElementById("valentineAudio");
 
             envelope.on('click', open);
             btnOpen.on('click', open);
@@ -301,10 +302,14 @@
 
             function open() {
                 envelope.removeClass("close").addClass("open");
+                audio.play();
             }
 
             function close() {
                 envelope.removeClass("open").addClass("close");
+                envelope.removeClass("open").addClass("close");
+                audio.pause(); // Pause the audio when the envelope is closed
+                audio.currentTime = 0; // Reset the audio to the beginning
             }
         });
     </script>
